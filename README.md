@@ -1,4 +1,3 @@
 - 👋 Hi, I’m @McJack3d
 - 👀 I’m interested in DataSciences/ML/Ai
-- 🌱 I’m currently learning basic stuff
 - 📫 How to reach me: alexandrebredillot@gmail.com
