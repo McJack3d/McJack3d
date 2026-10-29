@@ -1,0 +1,46 @@
+name: Refresh profile stats
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.13'
+
+      - name: Refresh public statistics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_stats.py
+
+      - name: Render both themes
+        run: python scripts/render_profile.py
+
+      - name: Commit updated profile
+        run: |
+          git add -- data/stats.json dark_mode.svg light_mode.svg
+          if git diff --cached --quiet; then
+            echo "Profile already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh public profile stats"
+          git push

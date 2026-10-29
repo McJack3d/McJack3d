@@ -1,0 +1,19 @@
+{
+  "username": "McJack3d",
+  "header": "alexandre@bredillot",
+  "name": "Alexandre Bredillot",
+  "host": "L'Oréal Beauty Tech",
+  "role": "Data Analytics Engineer",
+  "location": "Paris, France",
+  "focus": "Data Science, AI, Data Engineering",
+  "programming": "Python, SQL, VBA",
+  "languages": "French, English, Spanish",
+  "data_stack": "pandas, NumPy, scikit-learn",
+  "ai_stack": "PyTorch, Keras, NLP",
+  "cloud_stack": "GCP, BigQuery, PostgreSQL",
+  "web_stack": "React, HTML, CSS",
+  "hobbies": "Finance, calisthenics, running, travel",
+  "email": "alexandrebredillot@gmail.com",
+  "linkedin": "alexandre-bredillot",
+  "portfolio": "mcjack3d.github.io"
+}

@@ -1,16 +1,14 @@
-## Hi there 👋
+<a href="https://mcjack3d.github.io/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dark_mode.svg">
+    <img alt="Alexandre Bredillot — Data Analytics Engineer at L'Oréal Beauty Tech, Paris. Python, SQL, Data Science and AI. GitHub: McJack3d." src="./light_mode.svg" width="1120">
+  </picture>
+</a>
 
-<!--
-**McJack3d/McJack3d** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <a href="https://mcjack3d.github.io/">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/alexandre-bredillot/">LinkedIn</a> ·
+  <a href="mailto:alexandrebredillot@gmail.com">Email</a>
+</p>
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!-- Original implementation inspired by https://github.com/Andrew6rant/Andrew6rant. -->
